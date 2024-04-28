@@ -29,17 +29,17 @@ const Index = () => {
       {/* JSON Data Format Adjustment Interface */}
       <Box w="full" p={5} borderWidth="1px" borderRadius="lg">
         <Text fontSize="xl" mb={4}>
-          JSON Data Format Adjustment
+          JSON数据格式调整
         </Text>
         <VStack spacing={4}>
           <HStack>
-            <Input placeholder="Field Name" />
-            <Input placeholder="Data Type" />
-            <IconButton icon={<FaPlus />} aria-label="Add Field" />
-            <IconButton icon={<FaTrash />} aria-label="Remove Field" />
+            <Input placeholder="字段名称" />
+            <Input placeholder="数据类型" />
+            <IconButton icon={<FaPlus />} aria-label="添加字段" />
+            <IconButton icon={<FaTrash />} aria-label="删除字段" />
           </HStack>
           <Button leftIcon={<FaSave />} onClick={handleSave}>
-            Save Changes
+            保存更改
           </Button>
         </VStack>
       </Box>
@@ -47,17 +47,17 @@ const Index = () => {
       {/* Custom Data Pipeline Interface */}
       <Box w="full" p={5} borderWidth="1px" borderRadius="lg">
         <Text fontSize="xl" mb={4}>
-          Custom Data Pipeline
+          自定义数据管道
         </Text>
         <Flex justify="space-between" align="center">
           <Button leftIcon={<FaPlay />} onClick={() => {}}>
-            Run Pipeline
+            运行管道
           </Button>
           <Button leftIcon={<FaPause />} onClick={() => {}}>
-            Pause Pipeline
+            暂停管道
           </Button>
           <Button leftIcon={<FaSave />} onClick={handleSave}>
-            Save Configuration
+            保存配置
           </Button>
         </Flex>
       </Box>
@@ -65,12 +65,12 @@ const Index = () => {
       {/* Unified API Interface for Data Pipeline */}
       <Box w="full" p={5} borderWidth="1px" borderRadius="lg">
         <Text fontSize="xl" mb={4}>
-          Unified API Interface
+          统一API接口
         </Text>
         <VStack spacing={4}>
-          <Input placeholder="API Endpoint" />
+          <Input placeholder="API端点" />
           <Button leftIcon={<FaBook />} onClick={handleTestAPI}>
-            Test API
+            测试API
           </Button>
         </VStack>
       </Box>
@@ -78,12 +78,12 @@ const Index = () => {
       {/* Data Pipeline Management Interface */}
       <Box w="full" p={5} borderWidth="1px" borderRadius="lg">
         <Text fontSize="xl" mb={4}>
-          Data Pipeline Management
+          数据管道管理
         </Text>
         <VStack spacing={4}>
-          <Text>Current pipeline status: Running</Text>
+          <Text>当前管道状态：运行中</Text>
           <Button leftIcon={<FaSave />} onClick={() => {}}>
-            Export Data
+            导出数据
           </Button>
         </VStack>
       </Box>
